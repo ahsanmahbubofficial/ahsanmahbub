@@ -59,6 +59,10 @@ h2{font-size:30px !important;line-height:1.15 !important}
 .cta-box{padding:32px 24px !important;border-radius:20px !important}
 .cta-box a{flex:1 1 100%;text-align:center;padding-left:16px !important;padding-right:16px !important}
 .price{font-size:38px !important}
+.results-hint{display:block !important}
+.results-grid{display:flex !important;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 20px;gap:12px !important;margin:0 -20px !important;padding:4px 20px 8px;scrollbar-width:none}
+.results-grid::-webkit-scrollbar{display:none}
+.results-grid>article{flex:0 0 86%;scroll-snap-align:start}
 .price-hint{display:block !important}
 .price-grid{display:flex !important;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 20px;gap:12px !important;margin:0 -20px !important;padding:4px 20px 8px;scrollbar-width:none}
 .price-grid::-webkit-scrollbar{display:none}
@@ -126,7 +130,8 @@ summary{font-size:16px !important}
 <section id="results" style="max-width: 1200px; margin: 0 auto; padding: 72px 24px">
 <h2 style="margin: 0 0 12px; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 40px; letter-spacing: -0.02em">Results, not just edits</h2>
 <p class="lead" style="margin: 0 0 40px; color: #6B6B6B; max-width: 560px">I've done this for my own businesses first. Here's what organic content did with no ad budget.</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px">
+<p class="results-hint" style="display: none; margin: -8px 0 16px; font-size: 14px; font-weight: 500; color: #111111">Swipe to see all 3 stories →</p>
+<div class="results-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px">
 <article class="card" style="background: #FFFFFF; border: 1px solid #E5E5E0; border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 16px">
 <div style="display: flex; align-items: center; gap: 12px"><img src="cholobd-logo.png" alt="CholoBD logo" style="width: 40px; height: 40px; object-fit: contain; display: block"><p style="margin: 0; font-size: 14px; color: #6B6B6B">CholoBD · community app</p></div>
 <h3 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-weight: 600; font-size: 24px; line-height: 1.25">Launched a startup to 71k followers with $0 in ads</h3>
